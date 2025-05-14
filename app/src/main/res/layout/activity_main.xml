@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#E0F7FA">
+
+    <TextView
+        android:id="@+id/appTitle"
+        android:text="Tele-Weather"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="#0277BD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/image1"
+        android:src="@drawable/clima1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="10dp" />
+
+    <ImageView
+        android:id="@+id/image2"
+        android:src="@drawable/clima2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/btnIngresar"
+        android:text="Ingresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#1976D2"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/footer"
+        android:text="Elaborado por: Jostin Pino D. 20213830"
+        android:layout_marginTop="40dp"
+        android:textSize="12sp"
+        android:textColor="#555"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

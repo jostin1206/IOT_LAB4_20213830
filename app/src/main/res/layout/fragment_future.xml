@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#81D4FA"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pronóstico Futuro"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#001f4f"
+        android:layout_gravity="center"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:id="@+id/futureIdEditText"
+        android:textColorHint="#424040"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="idLocation"
+        android:inputType="number"
+        android:layout_marginBottom="8dp"
+        android:padding="10dp"
+        android:background="@android:drawable/edit_text" />
+
+    <EditText
+        android:id="@+id/futureDateEditText"
+        android:textColorHint="#424040"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fecha (YYYY-MM-DD)"
+        android:inputType="date"
+        android:layout_marginBottom="8dp"
+        android:padding="10dp"
+        android:background="@android:drawable/edit_text" />
+
+    <Button
+        android:id="@+id/searchFutureButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buscar"
+        android:backgroundTint="#6A1B9A"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:id="@+id/locationInfoText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lugar: "
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:textStyle="italic"
+        android:layout_marginBottom="8dp"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/futureRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>
